@@ -1,0 +1,2 @@
+# libresonic
+Libresonic Docker-Image
