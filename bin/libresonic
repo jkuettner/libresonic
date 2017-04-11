@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ln -sf $(which ffmpeg) ${CONFIG_DIR}/transcode/
+java \
+    -Dserver.port=${SERVER_PORT} \
+    -Dserver.address=${SERVER_ADDRESS} \
+    -Dsubsonic.defaultMusicFolder=${MEDIA_DIR} \
+    -Dlibresonic.home=${CONFIG_DIR} \
+    -jar /home/libresonic/libresonic.war
