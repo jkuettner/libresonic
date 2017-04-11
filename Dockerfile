@@ -13,6 +13,7 @@ ENV MEDIA_DIR "/media"
 ENV CONFIG_DIR "/config"
 ENV SERVER_PORT 8080
 ENV SERVER_ADDRESS "0.0.0.0"
+ENV LANG en_US.UTF-8
 
 ADD bin/libresonic /usr/bin/libresonic
 RUN wget -O /home/libresonic/libresonic.war \
