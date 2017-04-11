@@ -3,6 +3,7 @@
 mkdir -p ${CONFIG_DIR}/transcode
 ln -sf $(which ffmpeg) ${CONFIG_DIR}/transcode/
 java \
+    -Dfile.encoding=UTF-8 \
     -Dserver.port=${SERVER_PORT} \
     -Dserver.address=${SERVER_ADDRESS} \
     -Dsubsonic.defaultMusicFolder=${MEDIA_DIR} \
