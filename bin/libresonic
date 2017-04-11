@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir -p ${CONFIG_DIR}/transcode
 ln -sf $(which ffmpeg) ${CONFIG_DIR}/transcode/
 java \
     -Dserver.port=${SERVER_PORT} \
