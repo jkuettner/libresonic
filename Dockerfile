@@ -16,6 +16,7 @@ ENV SERVER_ADDRESS "0.0.0.0"
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
+RUN locale-gen "en_US.UTF-8"
 ADD bin/libresonic /usr/bin/libresonic
 RUN wget -O /home/libresonic/libresonic.war \
     https://github.com/Libresonic/libresonic/releases/download/v6.2.beta3/libresonic-v6.2.beta3.war
