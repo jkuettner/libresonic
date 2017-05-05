@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN useradd -ms /bin/bash libresonic
 RUN apt-get update \
     && apt-get install -y \
+        locales \
         wget \
         openjdk-8-jdk-headless \
         libav-tools
