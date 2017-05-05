@@ -19,7 +19,7 @@ ENV LC_ALL en_US.UTF-8
 RUN locale-gen "en_US.UTF-8"
 ADD bin/libresonic /usr/bin/libresonic
 RUN wget -O /home/libresonic/libresonic.war \
-    https://github.com/Libresonic/libresonic/releases/download/v6.2.beta3/libresonic-v6.2.beta3.war
+    https://github.com/Libresonic/libresonic/releases/download/v6.2/libresonic-v6.2.war
 RUN mkdir -p ${MEDIA_DIR} ${CONFIG_DIR} \
     && chown libresonic:libresonic -R /home/libresonic ${MEDIA_DIR} ${CONFIG_DIR} \
     && chmod +x /usr/bin/libresonic
